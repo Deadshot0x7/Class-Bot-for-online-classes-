@@ -18,7 +18,12 @@ def hetcollegeconnected():
     time.sleep(2) 
 
     print("Successfully COnnected with College Server")
-
+    username=str(input("Enter your username"))
+    password=str(input("Enter your password"))
+    browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/div/input").send_keys(username)
+    browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/div/di        v[2]/input").send_keys(password)
+    browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/button").click()  
+    
     ans=str(input("Do you want to close th browser ?"))
 
     if ans =="yes" or ans=="YES":
@@ -26,4 +31,4 @@ def hetcollegeconnected():
 
     
 if __name__ == '__main__':
-    sc.every().day.at("21:00").do(hetcollegeconnected)
+    sc.every().day.at("21:00").do(hetcollegeconnected())
