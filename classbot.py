@@ -1,5 +1,5 @@
 from selenium import webdriver	 
-
+#author : Sayyed Viquar Ahmed 
 # For using sleep function because selenium 
 # works only when the all the elements of the 
 # page is loaded. 
