@@ -12,7 +12,7 @@ def hetcollegeconnected():
     browser = webdriver.Chrome() 
     for i in range(0,10):
         print("Connecting with the COllege Server...")
-    browser.get('https://erp.mit.asia/') 
+   ## browser.get('https://erp.mit.asia/')   // replace it with your college 😅😅
 
 # Let's the user see and also load the element 
     time.sleep(2) 
