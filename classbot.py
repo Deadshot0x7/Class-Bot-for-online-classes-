@@ -12,7 +12,7 @@ def hetcollegeconnected():
     browser = webdriver.Chrome() 
     for i in range(0,10):
         print("Connecting with the COllege Server...")
-   ## browser.get('https://erp.mit.asia/')   // replace it with your college 😅😅
+   ## Replace it with your collge website    // replace it with your college 😅😅
 
 # Let's the user see and also load the element 
     time.sleep(2) 
@@ -23,8 +23,7 @@ def hetcollegeconnected():
     browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/div/input").send_keys(username)
     browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/div/di        v[2]/input").send_keys(password)
     browser .find_element_by_xpath("/html/body/div/div[1]/div/div/div[2]/div/div[2]/p[1]/form/button").click()  
-    
-    ans=str(input("Do you want to close th browser ?"))
+        ans=str(input("Do you want to close th browser ?"))
 
     if ans =="yes" or ans=="YES":
         browser.close()
